@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gaming.Console\Gaming.Console.csproj" />
+    <ProjectReference Include="..\Gaming.Contracts\Gaming.Contracts.csproj" />
+    <ProjectReference Include="..\Gaming\Gaming.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Abstractions">
+      <HintPath>..\..\Lib\Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Base">
+      <HintPath>..\..\Lib\Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Base.Contracts">
+      <HintPath>..\..\Lib\Base.Contracts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\LibTest\" />
+  </Target>
+
+
+</Project>
