@@ -29,17 +29,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Base.Contracts\AFrame.Base.Contracts.csproj" />
+    <ProjectReference Include="..\AFrame.Base.Contracts\AFrame.Base.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Abstractions">
-      <HintPath>..\..\Lib\Abstractions.dll</HintPath>
+      <HintPath>..\..\..\Lib\Abstractions.dll</HintPath>
     </Reference>
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\Lib\&#xD;&#xA;xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\LibTest\" />
+    <Exec Command="xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\Lib\&#xD;&#xA;xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\..\Lib\&#xD;&#xA;xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\LibTest\&#xD;&#xA;xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\..\LibTest\" />
   </Target>
   
 </Project>

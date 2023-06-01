@@ -2,12 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
+    <AssemblyName>AFrame.Abstractions</AssemblyName>
+    <RootNamespace>AFrame.Abstractions</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\Lib\&#xD;&#xA;xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\LibTest\" />
+    <Exec Command="xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\Lib\&#xD;&#xA;xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\..\Lib\&#xD;&#xA;xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\LibTest\&#xD;&#xA;xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\..\LibTest\" />
   </Target>
 
 </Project>

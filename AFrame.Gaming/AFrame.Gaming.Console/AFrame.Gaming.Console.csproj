@@ -3,6 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
+    <AssemblyName>AFrame.Gaming.Console</AssemblyName>
+    <RootNamespace>AFrame.Gaming.Console</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -12,23 +14,23 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Gaming\Gaming.csproj" />
+    <ProjectReference Include="..\AFrame.Gaming\AFrame.Gaming.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Abstractions">
-      <HintPath>..\..\Lib\Abstractions.dll</HintPath>
+    <Reference Include="AFrame.Abstractions">
+      <HintPath>..\..\..\Lib\AFrame.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Base">
-      <HintPath>..\..\Lib\Base.dll</HintPath>
+    <Reference Include="AFrame.Base">
+      <HintPath>..\..\..\Lib\AFrame.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Base.Contracts">
-      <HintPath>..\..\Lib\Base.Contracts.dll</HintPath>
+    <Reference Include="AFrame.Base.Contracts">
+      <HintPath>..\..\..\Lib\AFrame.Base.Contracts.dll</HintPath>
     </Reference>
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\Lib\&#xD;&#xA;xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\LibTest\" />
+    <Exec Command="xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\Lib\&#xD;&#xA;xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\..\Lib\&#xD;&#xA;xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\LibTest\&#xD;&#xA;xcopy /i /r /d /y $(OutDir)*.* $(SolutionDir)..\..\LibTest\" />
   </Target>
   
 
