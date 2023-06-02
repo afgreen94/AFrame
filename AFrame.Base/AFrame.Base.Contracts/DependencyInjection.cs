@@ -1,12 +1,12 @@
-﻿using Abstractions.Contracts;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AFrame.Base.Contracts.Abstractions;
 
-namespace Base.Contracts
+namespace AFrame.Base.Contracts
 {
     public interface IInitializable { IResult Initialize(IConfiguration configuration); }
     public interface IAsyncInitializable { ValueTask<IResult> InitializeAsync(IConfiguration configuration); }

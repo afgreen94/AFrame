@@ -1,6 +1,6 @@
-﻿using Abstractions.Contracts;
+﻿using AFrame.Base.Contracts.Abstractions;
 
-namespace Gaming    //-ag move to contracts 
+namespace AFrame.Gaming    //-ag move to contracts 
 {
 
 

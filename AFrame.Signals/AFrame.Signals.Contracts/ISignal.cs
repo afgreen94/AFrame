@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Signals.Contracts
+namespace AFrame.Signals.Contracts
 {
     public interface ISignal
     {

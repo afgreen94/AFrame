@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Base.Contracts;
+using AFrame.Base.Contracts;
 
-namespace Base
+namespace AFrame.Base
 {
     public abstract class DataCacheBase : IDataCache { }
 

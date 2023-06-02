@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -13,9 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="AFrame.Abstractions">
-      <HintPath>..\..\..\Lib\AFrame.Abstractions.dll</HintPath>
-    </Reference>
     <Reference Include="AFrame.Base">
       <HintPath>..\..\..\Lib\AFrame.Base.dll</HintPath>
     </Reference>

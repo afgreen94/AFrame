@@ -10,13 +10,13 @@ using Microsoft.Extensions.DependencyInjection;
 using OpenTK;
 using OpenTK.Windowing.Desktop;
 
-using Abstractions;
-using Abstractions.Contracts;
+using AFrame.Base;
+using AFrame.Base.Contracts;
+using AFrame.Base.Contracts.Abstractions;
+using AFrame.Base.Abstractions;
 
-using Base;
-using Base.Contracts;
 
-namespace Gaming.Drivers
+namespace AFrame.Gaming.Drivers
 {
     public class DefaultDriver : Driver, IDriver
     {

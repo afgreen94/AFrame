@@ -1,4 +1,4 @@
-﻿namespace Base
+﻿namespace AFrame.Base
 {
     public class Utils
     {

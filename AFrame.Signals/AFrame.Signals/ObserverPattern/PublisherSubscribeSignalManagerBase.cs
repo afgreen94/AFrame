@@ -1,12 +1,10 @@
-﻿using Abstractions;
-using Abstractions.Contracts;
-using Base;
-using Base.Contracts;
-using Signals.Contracts;
-using Signals.Contracts.ObserverPattern;
+﻿using AFrame.Base;
+using AFrame.Base.Contracts;
+using AFrame.Signals.Contracts;
+using AFrame.Signals.Contracts.ObserverPattern;
 using System.Text;
 
-namespace Signals.ObserverPattern
+namespace AFrame.Signals.ObserverPattern
 {
 
     //need abstr for typing  

@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-using Abstractions.Contracts; 
-
-namespace Base.Contracts
+namespace AFrame.Base.Contracts
 {
     public interface IDriver
     {

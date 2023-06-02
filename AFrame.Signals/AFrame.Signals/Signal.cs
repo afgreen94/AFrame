@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Signals
+namespace AFrame.Signals
 {
     public abstract class Signal
     {

@@ -1,11 +1,13 @@
-﻿using Abstractions.Contracts;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Signals.Contracts.ObserverPattern
+using AFrame.Base.Abstractions;
+using AFrame.Base.Contracts.Abstractions;
+
+namespace AFrame.Signals.Contracts.ObserverPattern
 {
 
     public interface IPublisherController

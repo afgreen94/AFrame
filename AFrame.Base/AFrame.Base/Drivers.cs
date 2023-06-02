@@ -7,13 +7,10 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-using Abstractions;
-using Abstractions.Contracts;
-
-using Base.Contracts;
+using AFrame.Base.Contracts;
 using System.Runtime.CompilerServices;
 
-namespace Base
+namespace AFrame.Base
 {
     public abstract class Driver : IDriver
     {
