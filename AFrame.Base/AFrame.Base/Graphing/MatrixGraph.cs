@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AFrame.Base.Contracts
+namespace AFrame.Base.Graphing
 {
-    public interface IDataCache
+    public class MatrixGraph
     {
     }
 }
-

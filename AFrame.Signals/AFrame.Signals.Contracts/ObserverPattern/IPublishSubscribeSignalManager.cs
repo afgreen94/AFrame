@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Signals.Contracts.ObserverPattern
+using AFrame.Base.Contracts.Abstractions;
+
+namespace AFrame.Signals.Contracts.ObserverPattern
 {
     public interface IPublishSubscribeSignalManager : ISignalManager
     {

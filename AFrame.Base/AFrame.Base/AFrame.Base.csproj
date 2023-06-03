@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
+    <AssemblyName>AFrame.Base</AssemblyName>
+    <RootNamespace>AFrame.Base</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -36,6 +38,13 @@
     <Reference Include="Abstractions">
       <HintPath>..\..\..\Lib\Abstractions.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Factories\" />
+    <Folder Include="DependencyInjection\" />
+    <Folder Include="Encoding\" />
+    <Folder Include="Text\" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">

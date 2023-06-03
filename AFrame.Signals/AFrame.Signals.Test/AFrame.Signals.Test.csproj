@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
+    <AssemblyName>AFrame.Signals.Test</AssemblyName>
+    <RootNamespace>AFrame.Signals.Test</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 

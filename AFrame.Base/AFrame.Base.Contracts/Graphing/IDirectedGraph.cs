@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AFrame.Base
+namespace AFrame.Base.Contracts.Graphing
 {
-    internal class Geometry
+    public interface IDirectedGraph : IGraph
     {
+        bool Directed { get; }
     }
 }

@@ -22,4 +22,13 @@ namespace AFrame.Base.Abstractions
     }
 
     public class Result : IResult { }
+
+    public class Pair<T> : IPair<T>
+    {
+        public T Item1 { get; set; }
+        public T Item2 { get; set; }
+
+        public Pair() { }
+        public Pair(T item1, T item2) { }
+    }
 }

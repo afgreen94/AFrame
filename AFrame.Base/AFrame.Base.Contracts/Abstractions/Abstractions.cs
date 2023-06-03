@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,6 +10,10 @@ namespace AFrame.Base.Contracts.Abstractions
     //-ag
     //add constraints on typing to capture full abstraction [Basically Typing lol]
 
+
+    public interface IPseudoNonDomainable { }
+    public interface IAssertedNonDomainable : IPseudoNonDomainable { }
+    public interface INonDomainable { } //getting at ID_0, seperate project 
     public interface IDomainable { } //encapsulate typing. trying to abstract something with ID 
 
     public interface IIdentifiable<T> { T Id { get; } }
@@ -41,4 +46,7 @@ namespace AFrame.Base.Contracts.Abstractions
 
     public interface IResult { }
     public interface IResult<T> : IResult { }
+
+
+    public interface IPair<T> { T Item1 { get; } T Item2 { get; } }
 }

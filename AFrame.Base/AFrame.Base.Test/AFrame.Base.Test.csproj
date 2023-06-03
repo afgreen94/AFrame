@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
+    <AssemblyName>AFrame.Base.Test</AssemblyName>
+    <RootNamespace>AFrame.Base.Test</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using AFrame.Base.Contracts;
+using AFrame.Base.Contracts.Caching;
 
-namespace AFrame.Base
+namespace AFrame.Base.Caching
 {
     public abstract class DataCacheBase : IDataCache { }
 
@@ -15,5 +15,6 @@ namespace AFrame.Base
     public static class GlobalDataCache { }
 
     public interface IDefaultDataCache : IDataCache { }
-
 }
+
+
