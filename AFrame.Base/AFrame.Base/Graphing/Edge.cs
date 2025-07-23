@@ -15,9 +15,4 @@ namespace AFrame.Base.Graphing
     public class Edge<TVertex> : Pair<TVertex>, IEdge<TVertex> { }
 
     public class Edge : Pair<IPoint>, IEdge { }
-
-    public class WeightedEdge<Tweight> : Edge, IWeightedEdge<Tweight> { }
-
-    public class WeightedEdge : Edge, IWeightedEdge { }
-
 }

@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AFrame.Base.Contracts.Graphing
+namespace AFrame.Base.Abstractions
 {
-    public interface IDirectedGraph : IGraph
+    public class CallResult
     {
-        bool Directed { get; }
     }
 }

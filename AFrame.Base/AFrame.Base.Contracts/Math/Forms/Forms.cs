@@ -21,27 +21,15 @@ namespace AFrame.Base.Contracts.Math.Forms
     //abstract forms beyond graphs lol ?  -ag 
     //for now keep the same 
 
-    public interface IDescribableForm : IForm, IDescribable<IFormDescription>
-    {
+    //public interface IGraphableForm 
+    //{
+    //    IFormGraph FormGraph { get; }
+    //}
 
-    }
+    //public interface IFormGraph : IGraph //need math graphing 
+    //{
 
-    public interface IGraphableForm : IDescribableForm
-    {
-        IFormGraph FormGraph { get; }
-    }
-
-    public interface IDescribableGraphableForm : IDescribableForm
-    {
-        IDescribableFormGraph FormGraph { get; }
-    }
-
-    public interface IFormGraph : IDescribableForm, IGraph
-    {
-
-    }
+    //}
 
     public interface IFormGraphDescription : IGraphDescription { }
-
-    public interface IDescribableFormGraph : IFormGraph, IDescribableGraph<IFormGraphDescription> { }
 }

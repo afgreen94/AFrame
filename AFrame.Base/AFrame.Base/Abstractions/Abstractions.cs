@@ -21,7 +21,17 @@ namespace AFrame.Base.Abstractions
         public override string Description { get; set; }
     }
 
-    public class Result : IResult { }
+    public class CallResult : ICallResult { }
+
+    public class CallResult<T> : CallResult, ICallResult<T>
+    {
+        public T Result { get; }
+        public bool Success { get; } = true;
+        public string ErrorMessage { get; } = string.Empty;
+
+
+        public CallResult(bool success, T result, string errorMessage) { this.Result = result; this.ErrorMessage = errorMessage; }
+    }
 
     public class Pair<T> : IPair<T>
     {

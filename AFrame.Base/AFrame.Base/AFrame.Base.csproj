@@ -44,6 +44,7 @@
     <Folder Include="Factories\" />
     <Folder Include="DependencyInjection\" />
     <Folder Include="Encoding\" />
+    <Folder Include="Data\" />
     <Folder Include="Text\" />
   </ItemGroup>
 
