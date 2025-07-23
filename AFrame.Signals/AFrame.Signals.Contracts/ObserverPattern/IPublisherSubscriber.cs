@@ -12,12 +12,12 @@ namespace AFrame.Signals.Contracts.ObserverPattern
 
     public interface IPublisherController
     {
-        IResult Publish(IPublication publication);
+        ICallResult Publish(IPublication publication);
     }
 
     public interface IAsyncPublisherController
     {
-        ValueTask<IResult> PublishAsync(IPublication publication);
+        ValueTask<ICallResult> PublishAsync(IPublication publication);
     }
 
     public interface IPublisher<TComms>
@@ -29,15 +29,15 @@ namespace AFrame.Signals.Contracts.ObserverPattern
     public interface ISubscriber<TComms>
         where TComms : IPublication
     {
-        IResult Subscribe(IPublisher<TComms> publisher);
-        IResult UnSubscribe(IPublisher<TComms> publisher);
+        ICallResult Subscribe(IPublisher<TComms> publisher);
+        ICallResult UnSubscribe(IPublisher<TComms> publisher);
     }
 
     public interface IPublisherSubscriber<TComms> : IPublisher<TComms>, ISubscriber<TComms>, ISignalManager
         where TComms : IPublication
     {
-        IResult Subscribe(ISubscriber<TComms> subscriber);
-        IResult UnSubscribe(ISubscriber<TComms> subscriber);
+        ICallResult Subscribe(ISubscriber<TComms> subscriber);
+        ICallResult UnSubscribe(ISubscriber<TComms> subscriber);
     }
 
     public interface IChiefPublisherSubscriber<TComms> : IPublisherSubscriber<TComms>,      

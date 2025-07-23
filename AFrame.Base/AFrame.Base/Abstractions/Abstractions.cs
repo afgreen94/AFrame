@@ -21,16 +21,20 @@ namespace AFrame.Base.Abstractions
         public override string Description { get; set; }
     }
 
-    public class CallResult : ICallResult { }
+    public class CallResult : ICallResult
+    {
+        public bool Success => throw new NotImplementedException();
+        public string ErrorMessage => throw new NotImplementedException();
+    }
 
     public class CallResult<T> : CallResult, ICallResult<T>
     {
-        public T Result { get; }
+        public T Value { get; }
         public bool Success { get; } = true;
         public string ErrorMessage { get; } = string.Empty;
 
 
-        public CallResult(bool success, T result, string errorMessage) { this.Result = result; this.ErrorMessage = errorMessage; }
+        public CallResult(bool success, T result, string errorMessage) { this.Value = result; this.ErrorMessage = errorMessage; }
     }
 
     public class Pair<T> : IPair<T>

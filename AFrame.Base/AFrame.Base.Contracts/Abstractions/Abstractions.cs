@@ -40,4 +40,7 @@ namespace AFrame.Base.Contracts.Abstractions
     public interface ILockable<T> : IStoreable<T> { }
     public interface ILockable : ILockable<IStoreable> { }
 
+
+    public interface IPair { }
+    public interface IPair<T> { }
 }

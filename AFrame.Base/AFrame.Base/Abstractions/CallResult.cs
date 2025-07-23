@@ -6,7 +6,4 @@ using System.Threading.Tasks;
 
 namespace AFrame.Base.Abstractions
 {
-    public class CallResult
-    {
-    }
 }

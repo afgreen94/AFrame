@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AFrame.Base.Contracts.Graphing        
+namespace AFrame.Base.Contracts.Graphing
 {
     public interface IVertex
     {
